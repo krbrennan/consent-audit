@@ -14,6 +14,9 @@ coverage/
 .env*
 !.env.example
 
+# Project notes and path
+GUIDE.md
+
 # Playwright
 /test-results/
 /playwright-report/

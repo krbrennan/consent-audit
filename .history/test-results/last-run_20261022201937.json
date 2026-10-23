@@ -1,0 +1,92 @@
+[
+  {
+    "url": "https://playwright.dev/",
+    "method": "GET",
+    "resourceType": "document"
+  },
+  {
+    "url": "https://playwright.dev/js/redirection.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://playwright.dev/assets/css/styles.3714015c.css",
+    "method": "GET",
+    "resourceType": "stylesheet"
+  },
+  {
+    "url": "https://playwright.dev/assets/js/runtime~main.f95dbbfb.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://playwright.dev/assets/js/main.bb11800a.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://playwright.dev/img/playwright-logo.svg",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/Browsers.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/VSCode.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/Bing.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/Outlook.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/DHotstar.jpg",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/MUI.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/ING.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/Adobe2.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/ReactNavigation.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/img/logos/accessibilityinsights.png",
+    "method": "GET",
+    "resourceType": "image"
+  },
+  {
+    "url": "https://playwright.dev/assets/js/1df93b7f.1f28980f.js",
+    "method": "GET",
+    "resourceType": "script"
+  },
+  {
+    "url": "https://playwright.dev/assets/js/a7456010.97ed42dc.js",
+    "method": "GET",
+    "resourceType": "script"
+  }
+]
