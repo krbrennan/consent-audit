@@ -23,3 +23,5 @@ GUIDE.md
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+.history/*
