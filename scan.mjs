@@ -1,6 +1,6 @@
-import { chromium } from 'playwright';
+// import { chromium } from 'playwright';
 import { mkdir, writeFile } from 'node:fs/promises';
-import { setTimeout as sleep } from 'node:timers/promises';
+// import { setTimeout as sleep } from 'node:timers/promises';
 
 const LISTEN_MS = 10_000;
 
@@ -34,15 +34,6 @@ const requestData = allRequests.map((request) => ({
     frameUrl: request.frame().url()
 }));
 
-// All Post Requests
-// const requestDataPost = allRequests
-//     .filter((request) => { return request.method() == "POST" })
-//     .map((request) => ({
-//         url: request.url(),
-//         method: request.method(),
-//         resourceType: request.resourceType()
-//     }))
-    
 
 
 await mkdir('test-results', { recursive: true });
