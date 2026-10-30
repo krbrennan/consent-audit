@@ -15,7 +15,7 @@ coverage/
 !.env.example
 
 # Project notes and path
-GUIDE.md
+guide/*
 
 # Playwright
 /test-results/
@@ -25,3 +25,6 @@ GUIDE.md
 /playwright/.auth/
 
 .history/*
+
+# scans
+/scans/*
