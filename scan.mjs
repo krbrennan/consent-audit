@@ -18,35 +18,10 @@ const page = await context.newPage();
 
 let allRequests = []
 
-// page.on('request', (request) => {
-//     // set the lastRequestAt variable to keep track of how long the request has taken
-//     lastRequestAt = Date.now();
-//     allRequests.push(request)
-// });
-
-
-// await page.goto('https://www.bbc.com/',{
-//     waitUntil: 'load',
-//     timeout: 60_000
-// });
-
 const listenStartedAt = Date.now();
-// await sleep(MAX_MS);
 
-
-// set domain name
+// hardcode domain name for now. stage 2 will instead use the CLI to pass a url
 domainName = new URL(TARGET_URL).hostname;
-
-
-// populate test-results/last-run.json
-// const requestData = allRequests.map((request) => ({
-//     url: request.url(),
-//     method: request.method(),
-//     resourceType: request.resourceType(),
-//     timeObserved: Date.now(),
-//     postData: request.postData(),
-//     frameUrl: request.frame().url()
-// }));
 
 // creating a new "lastRequestAt" for every request. once its been quiet for
 // QUIET_MS, xor up to MAX_MS, stop listening and close the page
@@ -64,7 +39,7 @@ page.on('request', (request) => {
 });
 
 
-// silent loop logic 
+// silent loop
 await page.goto(TARGET_URL);
 const pageOpenStartedAt = Date.now();
 const polling = 250
@@ -91,7 +66,6 @@ while(true){
 
 
 // writing results
-
 const folderPath = `${domainName}_${Date.now()}_no-interaction`
 
 await mkdir('scans', { recursive: true });

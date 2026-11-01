@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { scan } from "./scan.js";
+import { scan } from "./scanner/scan.ts";
 
 async function main(): Promise<void> {
 	const args = process.argv.slice(2);

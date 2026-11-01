@@ -9,5 +9,5 @@
     "strict": true,
     "types": ["node"]
   },
-  "include": ["src", "tests", "scan.mjs"]
+  "include": ["src", "tests"]
 }
