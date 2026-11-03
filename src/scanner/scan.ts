@@ -1,4 +1,4 @@
-import type { Browser } from 'playwright';
+import { type Browser, chromium } from 'playwright';
 import { setTimeout as sleep } from 'node:timers/promises';
 // import { setTimeout as sleep } from 'node:timers/promises';
 import type { 
@@ -11,10 +11,26 @@ import type {
 
 const CHECK_EVERY_MS = 250;
 
-// export async function runScenario(options:
-//     ScanOptions): Promise<CapturedRequest[]> {
+export async function scan(options:
+    ScanOptions): Promise<ScanResult> {
 
-//     }
+        const startedAt = Date.now();
+        const browser = await chromium.launch()
+        // const context = await chromium.launch()
+
+        try {
+           const noInteractionResult = await runScenario( browser, 'no-interaction', options);
+           return { 
+            url: options.url, 
+            finalUrl: noInteractionResult.finalUrl, 
+            startedAt, 
+            finishedAt: Date.now(), 
+            scenarios: [noInteractionResult]
+           };
+        } finally {
+            await browser.close();
+        }
+    }
 
 async function runScenario(
     browser: Browser, 
